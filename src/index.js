@@ -27,10 +27,10 @@ function handleSubmit(event) {
     refs.gallery.innerHTML = '';
     // refs.loadMoreBtn.classList.add('hidden');
     const form = event.currentTarget;
-    if (form.searchQuery.value.trim() === '') {
-        Notiflix.Notify.info("Enter something to search for");
-        return
-    }
+    // if (form.searchQuery.value.trim() === '') {
+    //     Notiflix.Notify.info("Enter something to search for");
+    //     return
+    // }
     createGallery(page);
 };
 
