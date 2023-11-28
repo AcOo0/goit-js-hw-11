@@ -63,6 +63,7 @@ body {
 }
 
 .load-more {
+  margin: 0 auto;
   padding: 10px 15px;
   background-color: #3498db;
   color: #fff;
@@ -70,6 +71,6 @@ body {
   cursor: pointer;
 }
 
-.load-more.hidden {
+.hidden {
   display: none;
 }

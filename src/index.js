@@ -25,12 +25,13 @@ refs.loadMoreBtn.classList.add('hidden');
 function handleSubmit(event) {
     event.preventDefault();
     refs.gallery.innerHTML = '';
-    // refs.loadMoreBtn.classList.add('hidden');
+    
     const form = event.currentTarget;
-    // if (form.searchQuery.value.trim() === '') {
-    //     Notiflix.Notify.info("Enter something to search for");
-    //     return
-    // }
+    if (form.searchQuery.value.trim() === '') {
+        Notiflix.Notify.info("Enter something to search for");
+        refs.loadMoreBtn.classList.add('hidden');
+        return
+    }
     createGallery(page);
 };
 
