@@ -63,9 +63,11 @@ body {
 }
 
 .load-more {
+  display: block;
   margin: 0 auto;
+  margin-top: 20px;
   padding: 10px 15px;
-  background-color: #3498db;
+  background-color: #e5814b;
   color: #fff;
   border: none;
   cursor: pointer;
